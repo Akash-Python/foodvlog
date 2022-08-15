@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+Template Name: Sislaf
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>AVODHA</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'hm/layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!--   ################################################################################################-->
+
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="center">
+        <!-- ################################################################################################ -->
+        <h1><a href="/">FOOD SHOPPING</a></h1>
+        <!-- ################################################################################################ -->
+      </div>
+      <nav id="mainav" class="fl_right">
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a class="active" href="">Register</a></li>
+          <li><a class="active" href="#">Logout</a></li>
+          <li><a class="active" href="#">Login</a></li>
+          <li><a class="active" href="{% url 'cartDetails' %}"><i class="fa fa-shopping-cart"></i> ({{itc}})</a></li>
+
+        <!-- ################################################################################################ -->
+      </nav>
+    </header>
+  </div>
+</div>
+{% block content %}
+{% endblock %}
+</body>
+</html>
